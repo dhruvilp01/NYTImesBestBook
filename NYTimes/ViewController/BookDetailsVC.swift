@@ -7,13 +7,14 @@ import UIKit
 
 class BookDetailsVC: UIViewController {
 
-    @IBOutlet weak var lblBookName: UILabel!
     var selectedBook : Book = Book.init()
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var lblAutherName: UILabel!
-    @IBOutlet weak var lblAmazonUrl: UILabel!
+    @IBOutlet weak var txtViewAmazonURL: UITextView!
+    @IBOutlet weak var txtViewReviewURL: UITextView!
+    
     
     // MARK: View Controller Life Cycle
     override func viewDidLoad() {
@@ -21,11 +22,11 @@ class BookDetailsVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        lblBookName.text = selectedBook.title ?? ""
         lblTitle.text = selectedBook.title ?? ""
         lblDesc.text = selectedBook.bookDesc ?? ""
         lblAutherName.text = selectedBook.author ?? ""
-        lblAmazonUrl.text = selectedBook.amazonURL ?? ""
+        txtViewAmazonURL.text = selectedBook.amazonURL ?? ""
+        txtViewReviewURL.text = selectedBook.reviewURL ?? ""
     }
     
     // MARK: - Button Tap Event

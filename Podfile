@@ -6,7 +6,7 @@ target 'NYTimes' do
   use_frameworks!
 
   # Pods for NYTimes
-
+    pod 'RealmSwift'                # DB
     pod 'Alamofire'                 # API Call
     pod 'AlamofireImage'            # Image download
     pod 'AlamofireObjectMapper'     # Object Mapping

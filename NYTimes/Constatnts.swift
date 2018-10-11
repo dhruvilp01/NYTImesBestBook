@@ -20,6 +20,13 @@ struct ConstantsGeneral {
     static let ACCEPT = "Accept"
     static let CONTENT_TYPE = "Content-Type"
     static let APP_JSON = "application/json"
+    static let SORT_WEEK = "byWeek"
+    static let SORT_RANK = "byRank"
+}
+
+struct ConstantsUserDefaults {
+    static let SORTED_TYPE = "sortedType"
+    static let STORED_DATE = "storedDate"
 }
 
 enum SERVICE_NATURE {
